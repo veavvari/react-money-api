@@ -1,26 +1,44 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Dummy from "./Dummy";
+import Header from "./Components/Header";
+import Footer from "./Components/Footer";
+import MoneyApi from "./Components/MoneyApi";
+import SidebarComp from "./Components/SidebarComp";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+// library.add(faFacebookF);
+
+export default class App extends React.Component {
+  state = { flag: false };
+  displayComp = (flag) => {
+    this.setState({ flag: true });
+  };
+  render() {
+    return (
+      <div className="grid-container">
+        <header>
+          <Header></Header>
+        </header>
+
+        <main>
+          <div className="row-class">
+            {/* <div className="col-md-3"> */}
+            <div className="col-md-2">
+              <SidebarComp getComp={this.displayComp}></SidebarComp>
+            </div>
+
+            <div className="col-md-10">
+              {!this.state.flag && <Dummy></Dummy>}
+              {this.state.flag && <MoneyApi></MoneyApi>}
+            </div>
+          </div>
+        </main>
+
+        <footer>
+          <Footer></Footer>
+        </footer>
+      </div>
+    );
+  }
 }
-
-export default App;
