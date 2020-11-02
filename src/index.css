@@ -133,7 +133,7 @@ footer {
 }
 .image-circle:hover{
 background:white;
-color: rgb(0, 165, 70);
+color:rgb(110,192,105,1);
 }
 .copywrite {
   display: block;
@@ -221,31 +221,37 @@ h2{
 }
 
 .copy-api {
+  margin-left: 11px;
+  border-style: solid;
+  width: fit-content;
+  margin-bottom: 45px;
+  padding: 3px 15px 3px 15px;
+  border-radius: 25px;
+  color: #3597c1;
   cursor: pointer;
-  font-size: 11px;
-  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNyIgaGVpZ2h0PSIzNyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBzdHJva2U9IiMzRjlDMzUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PHBhdGggZD0iTTI0LjE4NiAyNS45NjV2MS4zNTJjMCAuNjI4LS41MTQgMS4xNDMtMS4xNDMgMS4xNDNIMTIuNDNhMS4xNDYgMS4xNDYgMCAwIDEtMS4xNDMtMS4xNDNWMTMuNDk0YzAtLjYzLjUxNC0xLjE0MyAxLjE0My0xLjE0M2gxLjM1Ii8+PHBhdGggZD0iTTI3LjA0MyAxMy4zNzh2MTAuODc0YzAgLjYyOC0uNTE0IDEuMTQyLTEuMTQyIDEuMTQySDE1LjI4NmExLjE0NiAxLjE0NiAwIDAgMS0xLjE0My0xLjE0MlYxMC40MjljMC0uNjI5LjUxNC0xLjE0MyAxLjE0My0xLjE0M2g3Ljc3MyIvPjxwYXRoIGQ9Ik0yNy4wNDMgMTMuMzc4SDIzLjA2VjkuMzkzbTAtLjEwN2wzLjk4NCA0LjA5MiIvPjxwYXRoIGQ9Ik0zNi4yNzEgMTguNjMzYzAgOS43MzgtNy44OTYgMTcuNjI3LTE3LjYzMyAxNy42MjdDOC45IDM2LjI2IDEgMjguMzcgMSAxOC42MzMgMSA4Ljg5IDguOSAxIDE4LjYzOCAxIDI4LjM3NSAxIDM2LjI3IDguODkgMzYuMjcgMTguNjMzeiIvPjwvZz48L3N2Zz4=) 0 0 no-repeat;
-  width: 37px;
-  height: 37px;
-  margin-right: 10px;
-  display: inline-block;
 }
 
 .api-link {
   font-weight: 700;
-  font-size: 20px;
-  line-height: 42px;
+  font-size: 16px;
+  margin-bottom: 50px;
 }
 
 .api-method {
-  color: #c32064;
-  margin-right: 5px;
+  color: rgb(110, 192, 105, 1);
   text-transform: uppercase !important;
-
+  background-color: #d6edd5;
+  width: fit-content;
+  padding: 0 10px 0 10px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 3px;
+  margin-right: 5px;
 }
 
 .parameter-header {
-  color: rgb(0, 92, 132);
-  font-size: 2rem;
+  font-size: 16px;
   font-weight: bold;
 }
 
@@ -255,7 +261,7 @@ h2{
 
 .description{
   margin-top: 0;
-    margin-bottom: 1.5rem;
+  margin-bottom: 5rem;;
     font-size: 12px;
     padding-top: 11px;
 }
@@ -263,14 +269,21 @@ h2{
 /* table */
 
 .table-header{
-  font-size: 16px;
+  font-size: 15px;
 }
 .param-type{
     color: rgb(255, 255, 255);
     background: rgb(125, 153, 164);
-    padding: 4px 10px;
+    padding: 2px 10px;
     border-radius: 3px;
     font-size: 13px;
+}
+.table td {
+  padding: .75rem;
+  vertical-align: top;
+}
+.table-active, .table-active>td, .table-active>th {
+  background-color: white;
 }
 
 tr{
@@ -280,7 +293,7 @@ tr{
 .response-header {
   color: black;
   margin-bottom: 1rem;
-  font-size: 2rem;
+  font-size: 16px;
   font-weight: bold;
 
 }
@@ -292,9 +305,14 @@ tr{
   border-color: color;
   border-radius: 10px;
   font-size: 16px;
-  padding: 10px;
+  padding: 18px;
 }
-
+.arrow-icon{
+  padding-right: 5px;
+}
+.padding-icon{
+  padding-right: 1px;
+}
 /* Sidebar*/
 
 .siderbar{
@@ -317,6 +335,15 @@ tr{
     padding: 4px;
     justify-content: left;
     cursor:pointer;
+}
+.item-list-click{
+  font-size: 12px;
+    padding: 4px;
+    justify-content: left;
+    cursor:pointer;
+    color:rgb(110, 192, 105, 1);
+    font-weight: bold;
+    
 }
 .item-style-1{
   font-weight: bold;
@@ -382,4 +409,24 @@ tr{
   width: 80%;
   font-size: 12px;
   padding-top: 20px;
+}
+
+.plus-circle{
+  font-size: 15px;
+  padding-right: 5px;
+}
+
+.color-class{
+  background-color:#0000007d;
+  margin-bottom: 27px;
+}
+
+ul li:active{
+  font-weight: bold;
+}
+.arrow-class{
+  padding-right: 3px;
+}
+.transition-list{
+  transition-delay: 1s;on
 }
